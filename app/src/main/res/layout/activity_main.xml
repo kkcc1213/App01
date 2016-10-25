@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="tlc.kkcc_pk.app01.MainActivity">
+
+    <Button
+        android:text="@string/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BLogin"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/LinearLayOut01">
+
+        <ImageView
+            app:srcCompat="@drawable/logo_tlc"
+            android:id="@+id/ImageLogo"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_width="150dp"
+            android:layout_alignParentRight="false"
+            android:layout_centerHorizontal="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:text="@string/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LUser"
+            android:layout_weight="1.82"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/TBUser"
+            android:layout_weight="1"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:freezesText="true"
+            android:keepScreenOn="false"
+            android:contentDescription="@android:string/selectTextMode"
+            tools:text="@string/pass" />
+
+        <TextView
+            android:text="@string/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LPassword"
+            android:layout_weight="1"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp" />
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+            android:ems="10"
+        android:id="@+id/TBPassword"
+        android:layout_weight="1"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:password="true"
+            android:phoneNumber="true" />
+    </LinearLayout>
+
+</RelativeLayout>
