@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText UsernameEditText, PasswordEditText;
     private Button LoginButton;
     private CheckBox RememberCheckBox;
+    private String UserString, PassString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +28,17 @@ public class MainActivity extends AppCompatActivity {
         LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String CurrentUsername = String.valueOf(UsernameEditText.getText());
-                UsernameEditText.setText(String.valueOf(UsernameEditText.getText()) + "1");
+                UserString = String.valueOf(UsernameEditText.getText()).trim();
+                PassString = String.valueOf(PasswordEditText.getText()).trim();
+                //if(UserString.length() != 0 && PassString.length() != 0) same same
+                if (!UserString.equals("") && !PassString.equals("")) {
+                    MyAlert myAlert = new MyAlert(MainActivity.this,"คำเตือน","ไม่ได้ใส่ไรเลยโว้ยยยย");
+                    myAlert.myDialog();
+                }else
+                {
+                    MyAlert myAlert = new MyAlert(MainActivity.this,"คำคำคำคำ","ทำดีละlol");
+                    myAlert.myDialog();
+                }
             }
         });
         //this is Get Values
