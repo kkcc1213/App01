@@ -51,14 +51,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:id="@+id/TBUser"
             android:layout_weight="1"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp"
             android:freezesText="true"
             android:keepScreenOn="false"
             android:hint="@string/StdNo"
-            android:inputType="number" />
+            android:inputType="number"
+            android:id="@+id/usernameEditText" />
 
         <TextView
             android:text="@string/pass"
@@ -74,7 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
             android:ems="10"
-        android:id="@+id/TBPassword"
+        android:id="@+id/passwordEditText"
         android:layout_weight="1"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp"
@@ -87,19 +87,19 @@
             android:text="@string/Remember"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/checkBox"
             android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp" />
+            android:layout_marginRight="50dp"
+            android:id="@+id/remeberCheckBox" />
 
         <Button
             android:text="@string/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/BLogin"
             android:layout_alignParentBottom="true"
             android:background="#f7f7f7"
             android:layout_marginBottom="10dp"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:id="@+id/loginButton" />
     </LinearLayout>
 
 </RelativeLayout>
