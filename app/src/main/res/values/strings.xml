@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name">App01</string>
+    <string name="app_name">TLC</string>
     <string name="login">เข้าสู้ระบบ</string>
     <string name="user">ชื่อผู้ใช้:</string>
+    <string name="StdNo">รหัสนักศึกษา</string>
+    <string name="Remember">จดจำไว้</string>
+    <string name="IdNo">เลขบัตรประชาชน</string>
     <string name="pass">รหัสผ่าน:</string>
 </resources>
