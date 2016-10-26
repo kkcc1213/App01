@@ -1,7 +1,10 @@
 package tlc.kkcc_pk.app01;
 
+import android.content.Context;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -36,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
                     myAlert.myDialog();
                 }else
                 {
+                    String strURL = "http://103.13.30.147/php_get_user2.php";
+                    SynUser synUser = new SynUser(MainActivity.this);
+                    synUser.execute(strURL);
                     MyAlert myAlert = new MyAlert(MainActivity.this,"คำคำคำคำ","ทำดีละlol");
                     myAlert.myDialog();
                 }
@@ -48,8 +54,42 @@ public class MainActivity extends AppCompatActivity {
         UsernameEditText.setText(Username + "11");
     }
 
+    //Asnyctask คือการทำงานซ้ำๆ เช่น ต่อกับinternet ซ้ำๆ
+    //<2.Void = ไม่รอโหลด หรือ ค้าง , 3.String = ส่งคือมาเป็น String หนึ่งค่าเท่านั้น
+    private class SynUser extends AsyncTask<String, Void, String> {
+
+        private Context context;
+
+        public SynUser(Context context)
+        {
+            this.context = context;
+        }
+
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            try {
+
+            }catch (Exception e){
+                Log.d("26octV1", "e doIn ==> "+e.toString());
+            }
+
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+        }
+    }
+
     //Shift + Ctrl + Enter
     //auto completed
+
+    //Alt+Enter
+    //recommend setting
 
     //Ctrl + Alt + L
     //Reorganize code
