@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_hub_menus_student"
     android:layout_width="match_parent"
@@ -8,64 +9,177 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="tlc.kkcc_pk.app01.HubMenusStudent">
+    tools:context="tlc.kkcc_pk.app01.HubMenusStudent"
+    android:background="@drawable/wallpapers_a_02">
 
-    <TableLayout
+    <TextView
+        android:text="@string/Menus"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="false"
+        android:textSize="36sp"
+        android:layout_centerInParent="false"
+        android:gravity="center_horizontal"
+        android:background="@color/White" />
 
-        <TableRow
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="40dp" >
+            android:layout_height="wrap_content">
 
-            <Button
-                android:text="Button"
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button"
-                android:layout_marginRight="10dp"
-                android:layout_margin="20dp"
-                android:padding="20dp"
-                android:paddingRight="10dp" />
+                app:srcCompat="@drawable/build3"
+                android:id="@+id/imageButton3"
+                android:layout_weight="1" />
 
-            <Button
-                android:text="Button"
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button3"
-                android:layout_margin="20dp"
-                android:layout_marginRight="10dp"
-                android:padding="20dp"
-                android:paddingRight="10dp" />
-        </TableRow>
+                app:srcCompat="@drawable/build2"
+                android:id="@+id/imageButton2"
+                android:layout_weight="1" />
 
-        <TableRow
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/build1"
+                android:id="@+id/imageButton"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="40dp">
+            android:layout_height="wrap_content">
 
-            <Button
-                android:text="Button"
+            <TextView
+                android:text="@string/Sub1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:background="#f4ffffff"
+                android:textColorLink="@color/AColor" />
+
+            <TextView
+                android:text="@string/Sub2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:background="#f4ffffff"
+                android:textColorLink="@color/AColor" />
+
+            <TextView
+                android:text="@string/Sub3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:background="#f4ffffff"
+                android:textColorLink="@color/AColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button4"
-                android:padding="20dp"
-                android:paddingRight="10dp"
-                android:layout_margin="20dp"
-                android:layout_marginRight="10dp" />
+                app:srcCompat="@drawable/build6"
+                android:id="@+id/imageButton6"
+                android:layout_weight="1" />
 
-            <Button
-            android:text="Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button2"
-                android:padding="20dp"
-                android:paddingRight="10dp"
-                android:layout_margin="20dp"
-                android:layout_marginRight="10dp" />
-        </TableRow>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/build5"
+                android:id="@+id/imageButton5"
+                android:layout_weight="1" />
 
-    </TableLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/build4"
+                android:id="@+id/imageButton4"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/Sub4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="#f4ffffff"
+                android:textColorLink="@color/AColor" />
+
+            <TextView
+                android:text="@string/Sub5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="#f4ffffff"
+                android:textColorLink="@color/AColor" />
+
+            <TextView
+                android:text="@string/Sub6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="#f4ffffff"
+                android:textColorLink="@color/AColor" />
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

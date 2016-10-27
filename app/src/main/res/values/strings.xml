@@ -6,4 +6,11 @@
     <string name="Remember">จดจำไว้</string>
     <string name="IdNo">เลขบัตรประชาชน</string>
     <string name="pass">รหัสผ่าน:</string>
+    <string name="Sub1">เลข</string>
+    <string name="Sub2">อังกฤษ</string>
+    <string name="Sub3">ไทย</string>
+    <string name="Sub4">วิท</string>
+    <string name="Sub5">สังคม</string>
+    <string name="Sub6">โปรแกรม</string>
+    <string name="Menus">เมนูหลัก</string>
 </resources>
