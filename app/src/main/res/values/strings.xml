@@ -13,4 +13,10 @@
     <string name="Sub5">สังคม</string>
     <string name="Sub6">โปรแกรม</string>
     <string name="Menus">เมนูหลัก</string>
+    <string name="Ans1">ตัวเลือกที่ 1</string>
+    <string name="Ans2">ตัวเลือกที่ 2</string>
+    <string name="Ans3">ตัวเลือกที่ 3</string>
+    <string name="Ans4">ตัวเลือกที่ 4</string>
+    <string name="Question">คำถาม ?</string>
+    <string name="SelectRightAnswer">เลือกคำตอบที่ถูกต้อง?</string>
 </resources>

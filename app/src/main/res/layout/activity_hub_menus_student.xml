@@ -24,6 +24,12 @@
         android:gravity="center_horizontal"
         android:background="@color/White" />
 
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8" />
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
